@@ -27,4 +27,4 @@ Then User verifies  registered successfully
 And User closes the Browser
 Examples:
 |First Name|Last Name|Email|Password|
-|Sudheer|Reddy|sudheecdrgabgngula55875@gmail.com|abcde|
+|Sudheer|Reddy|sudheecdrgabgnnhjgula55875@gmail.com|abcde|
