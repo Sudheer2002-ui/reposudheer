@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">Test</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">com.Tastynibbles.Runner.TastyNibblesRegistration<br>com.Tastynibbles.Runner.TastyNibblesAddItemToCart<br>com.Tastynibbles.Runner.TastyNibblesLoginAndLogout<br>com.Tastynibbles.Runner.TestyNibblesValidAndInvalidCredentials<br>com.Tastynibbles.Runner.TastyNibblesAddingMultipleProductsAndVerfyCart<br></th>
+	    <th id="testClassNameId" hidden="true">TastyNibblesRegistration<br>TastyNibblesAddItemToCart<br>TastyNibblesLoginAndLogout<br>TestyNibblesValidAndInvalidCredentials<br>TastyNibblesAddingMultipleProductsAndVerfyCart<br></th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">Suite</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">C:\Users\sudhe\eclipse-workspace\ind\Tastynibbles\testng.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">testng.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:08:53</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>5</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="green">PASS</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+																												
+				
+				
+												<tr>
+			<td class="time">1742898939920</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('818b3d36-da22-44f7-87c3-1bbf7a0959a0','block');changeSingleIcon('span-818b3d36-da22-44f7-87c3-1bbf7a0959a0');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Tastynibbles.Runner.TastyNibblesAddItemToCart</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-818b3d36-da22-44f7-87c3-1bbf7a0959a0' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742898939920</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>88.063s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Login and search product and add to cart", "Unknown"</span><br>
+				<div class="stackTrace" id="818b3d36-da22-44f7-87c3-1bbf7a0959a0" style="display: block;">
+					</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1742899184156</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('71a60a82-d7ab-4aff-b158-e6d9e5d35e7c','block');changeSingleIcon('span-71a60a82-d7ab-4aff-b158-e6d9e5d35e7c');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Tastynibbles.Runner.TastyNibblesAddingMultipleProductsAndVerfyCart</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-71a60a82-d7ab-4aff-b158-e6d9e5d35e7c' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742899184156</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>124.433s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"User Adding two products and verifying cart summary", "Unknown"</span><br>
+				<div class="stackTrace" id="71a60a82-d7ab-4aff-b158-e6d9e5d35e7c" style="display: block;">
+					</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1742899028019</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('370923a2-2125-4fe0-b0b8-c74e68eca99d','block');changeSingleIcon('span-370923a2-2125-4fe0-b0b8-c74e68eca99d');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Tastynibbles.Runner.TastyNibblesLoginAndLogout</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-370923a2-2125-4fe0-b0b8-c74e68eca99d' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742899028019</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>45.095s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Successful Logout and Session Verification", "User LogOut"</span><br>
+				<div class="stackTrace" id="370923a2-2125-4fe0-b0b8-c74e68eca99d" style="display: block;">
+					</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1742898817034</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('3f8c1bdc-b567-4ab2-bb0a-0eef550b7f62','block');changeSingleIcon('span-3f8c1bdc-b567-4ab2-bb0a-0eef550b7f62');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Tastynibbles.Runner.TastyNibblesRegistration</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-3f8c1bdc-b567-4ab2-bb0a-0eef550b7f62' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742898817034</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>122.846s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"User Registration with Valid Data", "User Registration"</span><br>
+				<div class="stackTrace" id="3f8c1bdc-b567-4ab2-bb0a-0eef550b7f62" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1742898775263</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('fce72002-1afe-453f-b0a1-7073f58d88cc','block');changeSingleIcon('span-fce72002-1afe-453f-b0a1-7073f58d88cc');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Tastynibbles.Runner.TastyNibblesRegistration</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-fce72002-1afe-453f-b0a1-7073f58d88cc' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742898775263</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>41.717s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"User Registration with Invalid Data", "User Registration"</span><br>
+				<div class="stackTrace" id="fce72002-1afe-453f-b0a1-7073f58d88cc" style="display: block;">
+					</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1742899128585</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('04597c99-659b-49ef-af5f-de9e4734f485','block');changeSingleIcon('span-04597c99-659b-49ef-af5f-de9e4734f485');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Tastynibbles.Runner.TestyNibblesValidAndInvalidCredentials</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-04597c99-659b-49ef-af5f-de9e4734f485' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742899128585</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>55.542s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"User Login with valid credentials", "User Login with valid and invalid credentials"</span><br>
+				<div class="stackTrace" id="04597c99-659b-49ef-af5f-de9e4734f485" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1742899073213</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('da260832-1398-4350-8112-98d332df727e','block');changeSingleIcon('span-da260832-1398-4350-8112-98d332df727e');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Tastynibbles.Runner.TestyNibblesValidAndInvalidCredentials</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-da260832-1398-4350-8112-98d332df727e' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742899073213</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>55.368s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"User Login with invalid credentials", "User Login with valid and invalid credentials"</span><br>
+				<div class="stackTrace" id="da260832-1398-4350-8112-98d332df727e" style="display: block;">
+					</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>
